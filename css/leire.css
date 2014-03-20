@@ -1,3 +1,36 @@
 h1, h2, h3 {
 	color: #D61EC7;
 }
+
+header {
+ background-color: rgb(236, 236, 236);
+}
+
+.header-title {
+	color: #000;
+	font-weight: bold;
+}
+/* 
+ 	Aqui le damos color al borde de la derecha
+ 	de otra manera rgb y a que es transparencia
+ 	en este caso color negro con transparencia 
+ 	de 0.5
+ */
+.header-nav li {
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+/* 
+ 	Con las propiedad last child estas diciendo
+  que solo aplique este estilo al ultimo elemento
+  de algo, también hay first-child y nth-child
+ */
+.header-nav li:last-child {
+  border-right: none;
+}
+/* 
+	A los elementos se les puede dar estilos ante eventos
+   es el ejemplo de :hover (pasar por encima el raton) 
+ */
+.header-nav li:hover {
+  font-size: larger;
+}
